@@ -1,13 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
-import { SignUp } from './pages/signUp';
+import "./App.css";
+import {  useRoutes } from "react-router-dom";
+import Router from "./router";
 
 function App() {
-  return (
-    <div className="App">
-      <SignUp />
-    </div>
-  );
+  const routing = useRoutes(Router);
+  return <>{routing}</>;
 }
 
 export default App;

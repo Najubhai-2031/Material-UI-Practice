@@ -1,13 +1,11 @@
-// import { Button, Paper, Typography } from "@material-ui/core";
 import { Button, Paper, Typography } from "@mui/material";
-import { FormProvider, useForm } from "react-hook-form";
-import { FormInputText } from "./Components/FormInputText";
-import { FormInputRadio } from "./Components/FormInputRadio";
-import { FormInputDropdown } from "./Components/FormInputDropdown";
-import { FormInputDate } from "./Components/formInputDate";
-import { FormInputSlider } from "./Components/FormInputSlider";
-import { FormInputMultiCheckbox } from "./Components/FormInputMultiCheckbox";
-
+import { useForm } from "react-hook-form";
+import { FormInputText } from "../../Components/Form/FormInputText";
+import { FormInputRadio } from "../../Components/Form/FormInputRadio";
+import { FormInputDate } from "../../Components/Form/formInputDate";
+import { FormInputMultiCheckbox } from "../../Components/Form/FormInputMultiCheckbox";
+import { FormInputSlider } from "../../Components/Form/FormInputSlider";
+import { FormInputDropdown } from "../../Components/Form/FormInputDropdown";
 
 const defaultValues = {
   firstName: "",
@@ -22,7 +20,7 @@ const defaultValues = {
 
 export const SignUp = () => {
   const methods = useForm({ defaultValues: defaultValues });
-  const { handleSubmit, reset, control, setValue, watch } = methods;
+  const { handleSubmit, reset, control, setValue } = methods;
   const onSubmit = (data) => console.log(data);
 
   return (
@@ -65,7 +63,7 @@ export const SignUp = () => {
 
       <Button onClick={handleSubmit(onSubmit)} variant={"contained"}>
         {" "}
-        Submit{" "}
+        Sign Up{" "}
       </Button>
       <Button onClick={() => reset()} variant={"outlined"}>
         {" "}

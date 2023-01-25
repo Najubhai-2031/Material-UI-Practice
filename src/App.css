@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  border: none;
 }
 
 .App-logo {
@@ -35,4 +36,9 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.css-1ps6pg7-MuiPaper-root{
+  box-shadow: none !important;
 }
