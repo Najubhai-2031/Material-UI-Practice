@@ -10,19 +10,19 @@ import { Controller } from "react-hook-form";
 const options = [
   {
     label: "HTML5",
-    value: "1",
+    value: "HTML5",
   },
   {
     label: "CSS3",
-    value: "2",
+    value: "CSS3",
   },
   {
     label: "Javascript",
-    value: "3",
+    value: "Javascript",
   },
   {
     label: "React Js",
-    value: "4",
+    value: "React Js",
   },
 ];
 

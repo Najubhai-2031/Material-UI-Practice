@@ -1,6 +1,7 @@
 import Header from "../Components/Header";
 import AuthanticationLayout from "../Layout/AuthanticationLayout";
 import MainLayout from "../Layout/MainLayout";
+import PageNotfound from "../pages/404";
 import { SignIn } from "../pages/signIn";
 import { SignUp } from "../pages/signUp";
 
@@ -11,6 +12,7 @@ const Router = [
     children: [
       { path: "sign-in", element: <SignIn /> },
       { path: "sign-up", element: <SignUp /> },
+      { path: "*", element: <PageNotfound /> },
     ],
   },
   {
@@ -18,8 +20,9 @@ const Router = [
     element: <MainLayout />,
     children: [
       { path: "/", element: <Header /> },
+      { path: "*", element: <PageNotfound /> },
     ],
   },
-]
+];
 
 export default Router;

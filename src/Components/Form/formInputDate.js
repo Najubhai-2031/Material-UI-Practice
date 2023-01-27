@@ -1,7 +1,10 @@
 import React from "react";
 import DateFnsUtils from "@date-io/date-fns";
 import { Controller } from "react-hook-form";
-import { KeyboardDatePicker, MuiPickersUtilsProvider } from "@material-ui/pickers";
+import {
+  KeyboardDatePicker,
+  MuiPickersUtilsProvider,
+} from "@material-ui/pickers";
 const DATE_FORMAT = "dd-MMM-yy";
 
 export const FormInputDate = ({ name, control, label }) => {
@@ -10,7 +13,7 @@ export const FormInputDate = ({ name, control, label }) => {
       <Controller
         name={name}
         control={control}
-        render={({ field}) => (
+        render={({ field }) => (
           <KeyboardDatePicker
             fullWidth
             variant="inline"

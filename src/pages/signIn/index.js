@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { FormInputText } from "../../Components/Form/FormInputText";
 
 const defaultValues = {
-  name: "",
+  userName: "",
   email: "",
 };
 
@@ -26,7 +26,7 @@ export const SignIn = () => {
         Sign In{" "}
       </Typography>
 
-      <FormInputText name="firstName" control={control} label="Name" />
+      <FormInputText name="userName" control={control} label="Username" />
       <FormInputText name="email" control={control} label="Email" />
 
       <Button onClick={handleSubmit(onSubmit)} variant={"contained"}>

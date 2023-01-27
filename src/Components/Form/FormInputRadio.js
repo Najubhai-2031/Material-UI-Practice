@@ -5,11 +5,11 @@ import { FormControl, FormControlLabel, FormLabel, Radio, RadioGroup } from "@mu
 const options = [
   {
     label: "Male",
-    value: "1",
+    value: "Male",
   },
   {
     label: "Female",
-    value: "2",
+    value: "Female",
   },
 ];
 

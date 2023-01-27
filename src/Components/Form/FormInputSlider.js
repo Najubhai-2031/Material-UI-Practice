@@ -8,7 +8,7 @@ export const FormInputSlider = ({
   setValue,
   label,
 }) => {
-  const [sliderValue, setSliderValue] = React.useState(30);
+  const [sliderValue, setSliderValue] = React.useState(5);
 
   useEffect(() => {
     if (sliderValue) setValue(name, sliderValue);

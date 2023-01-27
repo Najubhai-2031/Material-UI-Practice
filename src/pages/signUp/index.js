@@ -9,6 +9,7 @@ import { FormInputDropdown } from "../../Components/Form/FormInputDropdown";
 
 const defaultValues = {
   firstName: "",
+  userName: "",
   lastName: "",
   email: "",
   gender: "",
@@ -28,15 +29,20 @@ export const SignUp = () => {
       style={{
         display: "grid",
         width: "100%",
+        padding: "20px 0px",
         justifyContent: "center",
         gridRowGap: "20px",
       }}
     >
-      <Typography variant="h6" style={{ textAlign: "center" }}>
+      <Typography
+        variant="h6"
+        style={{ textAlign: "center", fontWeight: "800" }}
+      >
         {" "}
         Sign Up{" "}
       </Typography>
 
+      <FormInputText name="username" control={control} label="Username" />
       <FormInputText name="firstName" control={control} label="First Name" />
       <FormInputText name="lastName" control={control} label="Last Name" />
       <FormInputText name="email" control={control} label="Email" />
@@ -62,12 +68,10 @@ export const SignUp = () => {
       />
 
       <Button onClick={handleSubmit(onSubmit)} variant={"contained"}>
-        {" "}
-        Sign Up{" "}
+        Sign Up
       </Button>
       <Button onClick={() => reset()} variant={"outlined"}>
-        {" "}
-        Reset{" "}
+        Reset
       </Button>
     </Paper>
   );
