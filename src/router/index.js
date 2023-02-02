@@ -1,4 +1,4 @@
-import Header from "../Components/Header";
+import Body from "../Components/Body";
 import AuthanticationLayout from "../Layout/AuthanticationLayout";
 import MainLayout from "../Layout/MainLayout";
 import PageNotfound from "../pages/404";
@@ -19,7 +19,7 @@ const Router = [
     path: "/",
     element: <MainLayout />,
     children: [
-      { path: "/", element: <Header /> },
+      { path: "/", element: <Body /> },
       { path: "*", element: <PageNotfound /> },
     ],
   },

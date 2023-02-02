@@ -22,20 +22,17 @@ export const SignIn = () => {
       }}
     >
       <Typography variant="h6" style={{ textAlign: "center" }}>
-        {" "}
-        Sign In{" "}
+        Sign In
       </Typography>
 
       <FormInputText name="userName" control={control} label="Username" />
       <FormInputText name="email" control={control} label="Email" />
 
       <Button onClick={handleSubmit(onSubmit)} variant={"contained"}>
-        {" "}
-        Sign In{" "}
+        Sign In
       </Button>
       <Button onClick={() => reset()} variant={"outlined"}>
-        {" "}
-        Reset{" "}
+        Reset
       </Button>
     </Paper>
   );

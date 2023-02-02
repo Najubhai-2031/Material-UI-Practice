@@ -38,8 +38,7 @@ export const SignUp = () => {
         variant="h6"
         style={{ textAlign: "center", fontWeight: "800" }}
       >
-        {" "}
-        Sign Up{" "}
+        Sign Up
       </Typography>
 
       <FormInputText name="username" control={control} label="Username" />
@@ -51,6 +50,7 @@ export const SignUp = () => {
       <FormInputDropdown
         name="education"
         control={control}
+        setValue={setValue}
         label="Select your highest Education"
       />
       <FormInputDate name="birthDate" control={control} label="Birth Date" />

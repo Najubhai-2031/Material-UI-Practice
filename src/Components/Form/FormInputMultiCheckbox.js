@@ -26,12 +26,7 @@ const options = [
   },
 ];
 
-export const FormInputMultiCheckbox = ({
-  name,
-  control,
-  setValue,
-  label,
-}) => {
+export const FormInputMultiCheckbox = ({ name, control, setValue, label }) => {
   const [selectedItems, setSelectedItems] = useState([]);
 
   const handleSelect = (value) => {
