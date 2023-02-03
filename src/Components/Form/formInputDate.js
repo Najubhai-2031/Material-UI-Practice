@@ -16,6 +16,7 @@ export const FormInputDate = ({ name, control, label }) => {
         render={({ field }) => (
           <KeyboardDatePicker
             fullWidth
+            required
             variant="inline"
             defaultValue={new Date()}
             id={`date-${Math.random()}`}

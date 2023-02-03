@@ -20,7 +20,7 @@ export const FormInputSlider = ({
 
   return (
     <>
-      <FormLabel component="legend">{label}</FormLabel>
+      <FormLabel component="legend" required>{label}</FormLabel>
       <Controller
         name={name}
         control={control}

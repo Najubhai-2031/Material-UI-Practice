@@ -38,7 +38,28 @@
   }
 }
 
-
-.css-1ps6pg7-MuiPaper-root{
+.css-1ps6pg7-MuiPaper-root {
   box-shadow: none !important;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  color: rgb(63, 63, 223);
+  cursor: pointer;
+}
+
+.buttons-div {
+  display: flex;
+  justify-content: center;
+}
+
+.inner-div{
+  margin: 0 10px;
+}
+
+.alreadyHaveAccount{
+  text-align: center;
 }

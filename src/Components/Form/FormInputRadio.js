@@ -32,7 +32,7 @@ export const FormInputRadio = ({ name, control, label }) => {
 
   return (
     <FormControl component="fieldset">
-      <FormLabel component="legend">{label}</FormLabel>
+      <FormLabel component="legend" required>{label}</FormLabel>
       <Controller
         name={name}
         control={control}

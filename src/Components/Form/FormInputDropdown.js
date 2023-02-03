@@ -8,7 +8,7 @@ const options = [
   { label: "PHD", value: 3 },
 ];
 
-export const FormInputDropdown = () => {
+export const FormInputDropdown = (name) => {
   const defaultProps = {
     options: options,
     getOptionLabel: (option) => option.label,
@@ -23,6 +23,8 @@ export const FormInputDropdown = () => {
           clearOnEscape
           renderInput={(params) => (
             <TextField
+              name={name}
+              required
               {...params}
               label="Select your highest Education"
               variant="standard"
